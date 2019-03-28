@@ -136,8 +136,6 @@ def send_slack_notification():
                 'message': mail['message']
             }
             mails_list.append(mail_dict)
-
-        print(add(1, 4))
         send_slack_message(mails_list)
 
 
