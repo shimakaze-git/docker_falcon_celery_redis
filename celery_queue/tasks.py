@@ -159,8 +159,8 @@ def send_mail(
 
         send_mail_count()
         save_mail(m)
-        # send_slack_notification()
-        send_slack_notification.delay()
+        send_slack_notification()
+        # send_slack_notification.delay()
 
         return True
     except Exception as e:
